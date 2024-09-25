@@ -1,11 +1,12 @@
 /* styles/Projects.css */
 .projects {
     padding: 40px;
-    background-color: #fff;
+    background-color: black;
   }
   
   .projects h2 {
     font-size: 2.5em;
+    color: white;
   }
   
   .project-list {
@@ -19,9 +20,11 @@
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
+    color: white;
   }
   
   .project-item h3 {
     font-size: 1.5em;
+    color: white;
   }
   

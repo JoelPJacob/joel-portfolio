@@ -1,16 +1,63 @@
 /* styles/Header.css */
 .header {
-    text-align: center;
-    padding: 20px;
-    background-color: #282c34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); 
     color: white;
-  }
-  
-  .header h1 {
+    border-radius: 100px; 
+    margin: 20px 20px; 
+    position: fixed; 
+    width: 90%;
+    height: 80px; 
+    border: 1px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    z-index: 1000; 
+}
+
+
+.left {
+    flex: 1;
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    flex: 1;
+    text-align: right; 
+}
+
+.header h1 {
     font-size: 3em;
-  }
-  
-  .header p {
+}
+
+.header p {
     font-size: 1.2em;
-  }
-  
+}
+
+.mode-toggle {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none; /* Removes default button border */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for button */
+    color: white; /* Text color for button */
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+nav li {
+    margin: 0 15px; /* Spacing between navigation items */
+}

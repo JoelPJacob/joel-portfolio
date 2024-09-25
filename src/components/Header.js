@@ -5,8 +5,22 @@ import './componentsStyles/Header.css';
 const Header = () => {
   return (
     <div className="header">
-      <h1>Your Name</h1>
-      <p>UI/UX Developer | React Enthusiast</p>
+      <div className="left">
+        <h1>Joel</h1>
+      </div>
+      <div className="center">
+        {/* <button className="mode-toggle">Toggle Light/Dark Mode</button> */}
+      </div>
+      <div className="right">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
