@@ -4,9 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px); 
-    color: white;
     border-radius: 100px; 
     margin: 20px 20px; 
     position: fixed; 
@@ -32,22 +30,20 @@
     text-align: right; 
 }
 
-.header h1 {
-    font-size: 3em;
-}
-
 .header p {
-    font-size: 1.2em;
+    margin: 0 15px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .mode-toggle {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    border: none; /* Removes default button border */
-    background-color: rgba(255, 255, 255, 0.2); /* Light background for button */
-    color: white; /* Text color for button */
-    border-radius: 5px; /* Rounded corners for the button */
+    border: none; 
+    /* background-color: rgba(255, 255, 255, 0.2);  */
+    border-radius: 5px; 
 }
 
 nav ul {
@@ -60,4 +56,16 @@ nav ul {
 
 nav li {
     margin: 0 15px; /* Spacing between navigation items */
+}
+nav li {
+    margin: 0 15px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav li:hover {
+    color: #f0a500; /* Change to any hover color you'd like */
 }

@@ -1,15 +1,18 @@
-// components/Header/Header.js
-import React from 'react';
+import React, { useContext } from 'react';
 import './componentsStyles/Header.css';
+import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
+const {toggleTheme,theme}=useTheme();
   return (
     <div className="header">
       <div className="left">
-        <h1>Joel</h1>
+        <p>Joel</p>
       </div>
       <div className="center">
-        {/* <button className="mode-toggle">Toggle Light/Dark Mode</button> */}
+        <button className="mode-toggle" onClick={toggleTheme}>  {/* Attach the toggle function */}
+          Toggle Light/Dark Mode
+        </button>
       </div>
       <div className="right">
         <nav>

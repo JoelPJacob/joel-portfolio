@@ -4,7 +4,6 @@
     justify-content: center;
     height: 100vh;
     padding: 0 10%;
-    background-color: black;
 }
 
 .home-container {
@@ -32,7 +31,6 @@
     font-size: 37px;
     font-weight: bold;
     margin-bottom: 0px;
-    color: white;
     font-family: 'Sora';
     font-weight: 600;
 }
@@ -54,19 +52,19 @@
 }
 
 .profile-picture {
-    height: 300px;
-    border: 2px solid white;
+    height: 350px;
+    border: 3px solid white;
     animation: rotateImage 5s infinite;
 }
 
 @keyframes rotateImage {
     0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
     50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
     100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 }
