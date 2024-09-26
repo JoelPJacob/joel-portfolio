@@ -1,2 +1,13 @@
 /* Technology.css */
 
+.condainer {
+    /* padding: 10px; */
+    margin: 0px 200px;
+}
+
+.rfm-child {
+    padding-right: 20px;
+}
+.main-heading {
+    text-align: center !important;
+}
