@@ -1,0 +1,62 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.education-element {
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.education-element.dark {
+  background: rgba(255, 255, 255, 0.2); /* Light color for dark theme */
+  color: #fff;
+}
+
+.education-element.light {
+  background: rgba(0, 0, 0, 0.2); /* Dark color for light theme */
+  color: #000;
+}
+
+.education-element:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hover-box:hover {
+  transform: scale(1.05);
+  background-color: #ffbb1a;
+  color: #000;
+}
+
+.education-content h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.5rem;
+}
+
+.education-content h4 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.main-heading-h1{
+  font-size: 15px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .education {
+    grid-template-columns: 1fr;
+  }
+}

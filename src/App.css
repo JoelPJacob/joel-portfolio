@@ -1,5 +1,19 @@
 .App {
-  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App.light {
+  background-color: white;
+  color: rgb(52, 52, 52);
+}
+
+.App.dark {
+  background-color: black;
+  color: rgb(126, 126, 126);
 }
 
 .App-logo {
@@ -28,10 +42,35 @@
   color: #61dafb;
 }
 
+.main-heading {
+  font-family: sans-serif, 'Sora';
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.sub-heading {
+  font-size: 22px;
+  /* color: rgb(123, 122, 122); */
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sub-text {
+  font-size: 16px;
+  line-height: 26px;
+  /* color: rgb(126, 126, 126); */
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
