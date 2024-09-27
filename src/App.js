@@ -1,30 +1,30 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Projects from './components/Projects';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Technology from './components/Technology';
-
+import Experience from './components/Experience';
 import './App.css';  // Ensure this has theme styles
 import { useTheme } from './context/ThemeContext';
 
 function App() {
-  const { theme, toggleTheme, themeStyles } = useTheme();
+  const { themeStyles } = useTheme();
+
   return (
     <div
       style={{
         background: themeStyles.backgroundColor,
         color: themeStyles.color
       }}
-    >  {/* Apply the theme as a class */}
+    >
       <Header />
-      <Home />
-      {/* <Technology /> */}
-      <About />
-      <Projects />
-      <Contact />
+      <div id="home"><Home /></div> {/* Add IDs to your sections */}
+      <div id="about"><About /></div>
+      <div id="education"><Education /></div>
+      <div id="experience"><Experience /></div>
+      <div id="contact"><Contact /></div>
       <Footer />
     </div>
   );

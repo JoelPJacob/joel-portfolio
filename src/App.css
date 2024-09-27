@@ -2,6 +2,10 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App.light {
   background-color: white;
   color: rgb(52, 52, 52);
@@ -47,8 +51,8 @@
 
 .sub-heading {
   font-size: 22px;
-  color: rgb(123, 122, 122);
-  font-family: sans-serif, 'Sora';
+  /* color: rgb(123, 122, 122); */
+  font-family: "Sora", sans-serif;
   font-weight: 700;
   line-height: 26px;
 }
@@ -56,8 +60,8 @@
 .sub-text {
   font-size: 16px;
   line-height: 26px;
-  color: rgb(126, 126, 126);
-  font-family: sans-serif, 'Sora';
+  /* color: rgb(126, 126, 126); */
+  font-family: "Sora", sans-serif;
   font-weight: 500;
 }
 
