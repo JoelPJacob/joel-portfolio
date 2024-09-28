@@ -11,9 +11,9 @@
   content: "";
   position: absolute;
   width: 2px;
-  background-color: #FFBB1A; /* Accent color */
-  top: 0;
-  bottom: 0;
+  background-color: #FFBB1A;
+  top: 50px;
+  bottom: 50px;
   left: 50%;
   margin-left: -1px;
 }
@@ -22,17 +22,9 @@
 .timeline-item {
   position: relative;
   display: flex;
-  /* align-items: center;  */
   width: 50%;
   padding: 20px 30px;
   box-sizing: border-box;
-  color: #333; /* Text color */
-}
-
-/* Left side items */
-.timeline-item.left {
-  left: 0;
-  justify-content: flex-end; /* Align content on the left side */
 }
 
 /* Right side items */
@@ -48,45 +40,79 @@
   background-color: #FFBB1A;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
-  z-index: 1;
-  transition: background-color 0.3s ease;
+  top: 40px;
+  /* top: 20px; */
+  /* z-index: 1; */
+  /* transition: background-color 0.3s ease; */
 }
 
 /* Positioning dots on the central line */
 .timeline-item.left .timeline-dot {
-  right: -8px; /* Half the width of the dot */
+  right: -8px; 
 }
 
 .timeline-item.right .timeline-dot {
-  left: -8px; /* Half the width of the dot */
+  left: -8px; 
 }
 
 /* Large year text next to the dot */
 .timeline-year {
-  font-size: 3em; /* Large text for the year */
+  font-size: 3em; 
   font-weight: bold;
-  color: transparent; /* Initially transparent for stroke effect */
+  color: transparent; 
   position: relative;
-  padding: 0 30px; /* Space between year and content */
-  -webkit-text-stroke: 2px #FFBB1A; /* Yellow outer stroke */
-  transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
+  margin-top: 11px;
+  padding: 0 30px; 
+  -webkit-text-stroke: 2px #FFBB1A;
+}
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 20px 0; 
+}
+.certification-border {
+  display: inline-block;
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px auto; 
+  border-radius: 5px;
+  text-align: center;
+  width: 60%;
 }
 
-/* Set the inner text color based on the theme */
-body.light-theme .timeline-year {
-  color: black; /* Black text for light theme */
+.certification {
+  font-size: 1.2em;
 }
 
-body.dark-theme .timeline-year {
-  color: white; /* White text for dark theme */
-}
 
 /* Change the text color to yellow on hover */
 .timeline-year:hover {
-  color: #FFBB1A; /* Text turns yellow on hover */
-  -webkit-text-stroke: 0; /* Remove the stroke on hover */
-  /* animation: zoomInOut 0.9s linear infinite;  */
+  color: #FFBB1A; 
+}
+.circle-container {
+  display: flex;
+  justify-content: center; /* Center the circles horizontally */
+  align-items: center; /* Center the circles vertically */
+  margin-top: 10px; /* Space between text and circles */
+}
+
+/* Individual circle styling */
+.circle {
+  width: 10px; /* Width of the circle */
+  height: 10px; /* Height of the circle */
+  background-color: white; /* Default circle color */
+  border-radius: 50%; /* Make the circle */
+  margin: 0 5px; /* Space between circles */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border: 1px solid grey; /* Border color and width */
+}
+
+/* Active state for the circle */
+.circle.active {
+  background-color: grey; /* Change to white when active */
+  border: 1px solid white; /* Change border color when active */
 }
 
 /* Keyframes for continuous zoom in and out animation */
@@ -114,8 +140,8 @@ body.dark-theme .timeline-year {
 
 /* Timeline content container */
 .timeline-content {
-  max-width: 300px; /* Adjust the width as needed */
-  padding-left: 10px; /* Optional: add some padding between year and content */
+  max-width: 300px; 
+  padding-left: 10px; 
 }
 
 /* Styling for the title */
@@ -123,7 +149,7 @@ body.dark-theme .timeline-year {
   font-size: 1.4em;
   font-weight: bold;
   margin: 0;
-  color: #333;
+  color: white;
 }
 
 /* Styling for the company name */
@@ -144,6 +170,8 @@ body.dark-theme .timeline-year {
   margin: 10px 0 0;
   color: #555;
 }
+
+
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
