@@ -22,8 +22,8 @@ function App() {
       <Header />
       <div id="home"><Home /></div> {/* Add IDs to your sections */}
       <div id="about"><About /></div>
-      <div id="education"><Education /></div>
       <div id="experience"><Experience /></div>
+      <div id="education"><Education /></div>
       <div id="contact"><Contact /></div>
       <Footer />
     </div>

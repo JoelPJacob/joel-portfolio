@@ -1,62 +1,202 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* Container for the education */
 .education {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
-.education-element {
+/* Central education line */
+.education::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #FFBB1A;
+  top: 50px;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Individual education items */
+.education-item {
+  position: relative;
+  display: flex;
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* Right side items */
+.education-item.right {
+  left: 50%;
+  align-items: normal;
+}
+
+/* education dot */
+.education-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #FFBB1A;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  /* top: 20px; */
+  /* z-index: 1; */
+  /* transition: background-color 0.3s ease; */
+}
+
+/* Positioning dots on the central line */
+.education-item.left .education-dot {
+  right: -8px; 
+}
+
+.education-item.right .education-dot {
+  left: -8px; 
+}
+
+/* Large year text next to the dot */
+.education-year {
+  font-size: 3em; 
+  font-weight: bold;
+  color: transparent; 
+  position: relative;
+  margin-top: 11px;
+  padding: 0 30px; 
+  -webkit-text-stroke: 2px #FFBB1A;
+}
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 20px 0; 
+}
+.certification-border {
+  display: inline-block;
+  border: 1px solid;
   padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px auto; 
+  border-radius: 5px;
+  text-align: center;
+  width: 60%;
 }
 
-.education-element.dark {
-  background: rgba(255, 255, 255, 0.2); /* Light color for dark theme */
-  color: #fff;
+.certification {
+  font-size: 1.2em;
 }
 
-.education-element.light {
-  background: rgba(0, 0, 0, 0.2); /* Dark color for light theme */
-  color: #000;
+
+/* Change the text color to yellow on hover */
+.education-year:hover {
+  color: #FFBB1A; 
+}
+.circle-container {
+  display: flex;
+  justify-content: center; /* Center the circles horizontally */
+  align-items: center; /* Center the circles vertically */
+  margin-top: 10px; /* Space between text and circles */
 }
 
-.education-element:hover {
-  transform: scale(1.05);
-  background-color: rgba(255, 255, 255, 0.4);
+/* Individual circle styling */
+.circle {
+  width: 10px; /* Width of the circle */
+  height: 10px; /* Height of the circle */
+  background-color: white; /* Default circle color */
+  border-radius: 50%; /* Make the circle */
+  margin: 0 5px; /* Space between circles */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border: 1px solid grey; /* Border color and width */
 }
 
-.hover-box:hover {
-  transform: scale(1.05);
-  background-color: #ffbb1a;
-  color: #000;
+/* Active state for the circle */
+.circle.active {
+  background-color: grey; /* Change to white when active */
+  border: 1px solid white; /* Change border color when active */
 }
 
-.education-content h3 {
-  margin: 10px 0 5px 0;
-  font-size: 1.5rem;
+/* Keyframes for continuous zoom in and out animation */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.2); /* Zoomed-in size */
+  }
 }
 
-.education-content h4 {
-  font-size: 1.2rem;
+/* Specific styling for 2023 and 2024 */
+.education-year-2023,
+.education-year-2024 {
+  -webkit-text-stroke: 2px #FFBB1A;
+}
+
+/* Align content next to the year */
+.education-content-flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* education content container */
+.education-content {
+  max-width: 300px; 
+  padding-left: 10px; 
+}
+
+/* Styling for the title */
+.education-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+/* Styling for the company name */
+.education-company {
+  font-size: 1.2em;
   margin: 5px 0;
-}
-.main-heading-h1{
-  font-size: 15px;
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  line-height: 26px;
+  color: #555;
 }
 
+/* Duration and other details */
+.education-duration {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.education-description {
+  font-size: 1em;
+  margin: 10px 0 0;
+  color: #555;
+}
+
+
+
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-  .education {
-    grid-template-columns: 1fr;
+  .education-item {
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .education-item.left,
+  .education-item.right {
+    left: 0;
+  }
+
+  .education-dot {
+    left: -10px; /* Adjust for smaller screens */
+  }
+
+  .education::before {
+    left: 25px;
+  }
+
+  /* Adjust year position for smaller screens */
+  .education-year {
+    font-size: 2em;
+    top: -10px;
   }
 }

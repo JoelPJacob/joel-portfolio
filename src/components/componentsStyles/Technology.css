@@ -1,14 +1,50 @@
-/* Technology.css */
-
+/* Container for the tech stacks */
 .condainer {
-    margin: 0px 200px;
+    margin: 0 100px;
 }
 
-.rfm-child {
-    padding-right: 20px !important;
-    background-color: transparent !important;
-}
+/* Main heading styling */
 .main-heading {
-    text-align: center !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
 }
 
+/* Media queries for responsiveness */
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    .condainer {
+        margin: 0 200px;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .condainer {
+        margin: 0 50px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    .condainer {
+        margin: 0 20px;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 1000px; /* Adjusted width for smaller screens */
+    }
+}

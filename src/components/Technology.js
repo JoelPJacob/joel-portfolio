@@ -1,7 +1,5 @@
 import React from 'react';
 import './componentsStyles/Home.css';
-import ProfilePicture from '../assets/images/joel-img.jpg';
-import { Git, Linkedin, GitWhite, LinkedinWhite } from '../assets/icons';
 import { useTheme } from '../context/ThemeContext';
 import Marquee from "react-fast-marquee";
 import './componentsStyles/Technology.css';

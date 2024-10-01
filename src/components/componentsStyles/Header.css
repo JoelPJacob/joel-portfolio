@@ -45,10 +45,6 @@ nav a{
     color: inherit; 
 }
 
-nav li:hover {
-    /* color: #f0a500;  */
-}
-
 .mode-toggle {
     cursor: pointer;
     border: none; 

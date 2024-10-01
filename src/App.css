@@ -46,7 +46,8 @@ html {
   font-family: sans-serif, 'Sora';
   font-size: 37px;
   font-weight: 600;
-  line-height: 26px;
+  /* line-height: 26px; */
+  /* padding-top: 150px; */
 }
 
 .sub-heading {
@@ -54,12 +55,12 @@ html {
   /* color: rgb(123, 122, 122); */
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  line-height: 26px;
+  /* line-height: 26px; */
 }
 
 .sub-text {
   font-size: 16px;
-  line-height: 26px;
+  /* line-height: 26px; */
   /* color: rgb(126, 126, 126); */
   font-family: "Sora", sans-serif;
   font-weight: 500;

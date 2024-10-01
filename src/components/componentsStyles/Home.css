@@ -47,12 +47,13 @@
     font-size: 16px;
     line-height: 1.6;
     color: rgb(126, 126, 126);
-    font-family: sans-serif,'Sora';
+    font-family: sans-serif, 'Sora';
     font-weight: 500;
 }
 
 .profile-picture {
-    height: 350px;
+    height: 350px; /* Original height */
+    width: auto; /* Maintain aspect ratio */
     border: 3px solid white;
     animation: rotateImage 5s infinite;
 }
@@ -66,5 +67,68 @@
     }
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* Add media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .home {
+        padding: 0 5%;
+    }
+
+    .home-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .intro {
+        font-size: 28px;
+    }
+
+    .role {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .profile-picture {
+        height: 300px; 
+        width: 300px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-container {
+        width: 100%;
+    }
+
+    .intro {
+        font-size: 24px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .profile-picture {
+        height: 250px;
+        width: 250px;
     }
 }
