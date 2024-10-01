@@ -27,7 +27,7 @@ let experienceElements = [
   },
   {
     id: 3,
-    designition: "Intern",
+    designition: "Internship",
     organization: "RoadE Labs Pvt Ltd",
     location: "Kakkanad, Kochi, Kerala",
     description:

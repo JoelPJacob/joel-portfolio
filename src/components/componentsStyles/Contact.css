@@ -1,13 +1,77 @@
-/* styles/Contact.css */
 .contact {
-    padding: 40px;
+  padding: 20px 200px;
+}
+
+.sub-heading {
+  font-size: 30px !important;
+  text-align: center; /* Center the subheading text */
+}
+
+.contact-item {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gmail-sub-heading {
+  font-size: 15px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center; /* Center content */
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.linkedin-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.contact-link p {
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact {
+    padding: 10px 20px; /* Reduce padding on smaller screens */
   }
-  
-  .contact h2 {
-    font-size: 2.5em;
+
+  .sub-heading {
+    font-size: 24px !important; /* Reduce subheading size for mobile */
   }
-  
-  .contact p {
-    font-size: 1.2em;
+
+  .contact-item {
+    flex-direction: column; /* Stack icons and text vertically for better mobile display */
+    margin: 15px 0; /* Add spacing between items */
   }
-  
+
+  .contact-link {
+    justify-content: center; /* Center content on mobile */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items */
+  }
+
+  .contact-icon {
+    margin-bottom: 10px; /* Add spacing below the icon */
+  }
+
+  .gmail-sub-heading {
+    font-size: 14px; /* Adjust font size for mobile */
+    line-height: 22px;
+  }
+}

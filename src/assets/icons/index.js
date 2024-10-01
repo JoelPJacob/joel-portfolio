@@ -12,9 +12,13 @@ import { ReactComponent as Flutter } from './flutter.svg'
 import { ReactComponent as Figma } from './figma.svg'
 import { ReactComponent as JavaScript } from './javascript.svg'
 import { ReactComponent as LightMode } from './sun-light.svg'
+import { ReactComponent as Phone } from './call.svg'
+import { ReactComponent as Gmail } from './gmail-color.svg'
 
 export {
     ReactJs,
+    Phone,
+    Gmail,
     Html,
     JavaScript,
     Figma,
