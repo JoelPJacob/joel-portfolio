@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/joel-portfolio/static/css/main.12ee5d40.css",
-    "main.js": "/joel-portfolio/static/js/main.043c8d3d.js",
+    "main.css": "/joel-portfolio/static/css/main.1f81f971.css",
+    "main.js": "/joel-portfolio/static/js/main.556c744c.js",
     "static/js/453.c4f565e5.chunk.js": "/joel-portfolio/static/js/453.c4f565e5.chunk.js",
+    "static/media/about.png": "/joel-portfolio/static/media/about.2f47ea4c9cf7c09f1ae4.png",
     "static/media/joel-img.jpg": "/joel-portfolio/static/media/joel-img.e8cdad86efbe16b739b3.jpg",
+    "static/media/postman.svg": "/joel-portfolio/static/media/postman.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
+    "static/media/sun-dark.svg": "/joel-portfolio/static/media/sun-dark.ecf208e7cf97f9abb65b44a68310ff24.svg",
+    "static/media/sun-light.svg": "/joel-portfolio/static/media/sun-light.f7822efd46b6d12c00f6c48731172617.svg",
+    "static/media/react.svg": "/joel-portfolio/static/media/react.64c523c5c6fd607a4718810c4f4f134a.svg",
+    "static/media/call.svg": "/joel-portfolio/static/media/call.1d3118ec9fe9ef49af96e2a25c7086b5.svg",
+    "static/media/javascript.svg": "/joel-portfolio/static/media/javascript.7a1db848ade49f2aa63629e92c878352.svg",
     "static/media/git-white.svg": "/joel-portfolio/static/media/git-white.93294704a9d440bcc9e90af8fa77b38c.svg",
     "static/media/git.svg": "/joel-portfolio/static/media/git.dfbe761599825318e886e01c66d41402.svg",
+    "static/media/html.svg": "/joel-portfolio/static/media/html.55e30700d9f9b4ced6899bd4a0e0c58b.svg",
+    "static/media/figma.svg": "/joel-portfolio/static/media/figma.6ef7a261d1980371ee82a86e5295df6a.svg",
+    "static/media/css.svg": "/joel-portfolio/static/media/css.a75d9f4f17f2d9a84e021a88766c910f.svg",
+    "static/media/flutter.svg": "/joel-portfolio/static/media/flutter.c7e355b233ca9fe0f5871638a671adb2.svg",
     "index.html": "/joel-portfolio/index.html",
     "static/media/linkedin-white.svg": "/joel-portfolio/static/media/linkedin-white.9b95dfa0348ef2fc9a1bc36ca3c62851.svg",
+    "static/media/gmail-color.svg": "/joel-portfolio/static/media/gmail-color.e1bc2ceb745debf9361ad2160a79823a.svg",
     "static/media/linkedin.svg": "/joel-portfolio/static/media/linkedin.e15d8494ebb7d7d6359ce6d55c0f6b5e.svg",
-    "main.12ee5d40.css.map": "/joel-portfolio/static/css/main.12ee5d40.css.map",
-    "main.043c8d3d.js.map": "/joel-portfolio/static/js/main.043c8d3d.js.map",
+    "main.1f81f971.css.map": "/joel-portfolio/static/css/main.1f81f971.css.map",
+    "main.556c744c.js.map": "/joel-portfolio/static/js/main.556c744c.js.map",
     "453.c4f565e5.chunk.js.map": "/joel-portfolio/static/js/453.c4f565e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12ee5d40.css",
-    "static/js/main.043c8d3d.js"
+    "static/css/main.1f81f971.css",
+    "static/js/main.556c744c.js"
   ]
 }
