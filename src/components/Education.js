@@ -61,7 +61,7 @@ const Education = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToNextSlide();
-    }, 5000); // Slide automatically every 5 seconds
+    }, 2000); // Slide automatically every 5 seconds
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, [currentSlide]);
