@@ -11,6 +11,9 @@ const About = () => {
         </div>
         <div className='about-content'>
           <p className='main-heading'>About Me</p>
+          <div className='about-image-mobile'>
+          <img src={AboutPic} alt='About Picture' />
+        </div>
           <p className='sub-heading'>
             A dedicated Front-end Developer based in India📍
           </p>

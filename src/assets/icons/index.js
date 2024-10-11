@@ -14,9 +14,13 @@ import { ReactComponent as JavaScript } from './javascript.svg'
 import { ReactComponent as LightMode } from './sun-light.svg'
 import { ReactComponent as Phone } from './call.svg'
 import { ReactComponent as Gmail } from './gmail-color.svg'
+import { ReactComponent as MenuBlack } from './burger-menu-black.svg'
+import { ReactComponent as MenuWhite } from './burger-menu-white.svg'
 
 export {
     ReactJs,
+    MenuWhite,
+    MenuBlack,
     Phone,
     Gmail,
     Html,

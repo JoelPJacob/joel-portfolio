@@ -20,6 +20,12 @@
   display: flex;
   justify-content: center;
 }
+.about-image-mobile {
+  /* order: 2;  */
+  width: 100%;
+  margin-top: 20px;
+  display:none;
+}
 
 .about-image img {
   max-width: 100%;
@@ -58,25 +64,29 @@
 
   /* Adjust the order for mobile and tablet */
   .main-heading {
-    order: 1; /* "About Me" at the top */
     font-size: 32px; /* Converted from 2rem */
   }
 
   .about-image {
-    order: 2; /* The image comes after "About Me" */
     width: 100%;
     margin-top: 20px;
+    display: none;
+  }
+  .about-image-mobile {
+    width: 100%;
+    margin-top: 20px;
+    display:block;
   }
 
   .sub-heading {
-    order: 3; /* "A dedicated Front-end Developer" after the image */
-    font-size: 19.2px; /* Converted from 1.2rem */
+    order: 3;
+    font-size: 19.2px; 
     margin-top: 20px;
   }
 
   .sub-text {
-    font-size: 16px; /* Converted from 1rem */
-    line-height: 24px; /* Adjusted line height */
+    font-size: 16px; 
+    line-height: 24px;
     text-align: justify;
   }
 }
@@ -89,6 +99,22 @@
 
   .about-content {
     margin-top: 15px;
+    width: 100%;
+  }
+  .about-image {
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+  }
+  .about-image-mobile {
+    width: 70%;
+    margin-top: 20px;
+    display:block;
+  }
+  .about-image-mobile {
+    width: 100% !important;
+    margin-top: 20px;
+    display:block;
   }
 
   .main-heading {
