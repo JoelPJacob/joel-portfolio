@@ -12,6 +12,9 @@ const Home = () => {
             <div className="home">
                 <div className="home-container">
                     <div className="text-container">
+                    <div className="image-container-mobile">
+                        <img src={ProfilePicture} alt="Joel P Jacob" className="profile-picture" />
+                    </div>
                         <p className="intro">Hello, I'm Joel P Jacob 👋🏼</p>
                         <p className="role">Frontend Developer</p>
                         <p className="description">I like to craft solid and scalable frontend products with great user experiences.</p>

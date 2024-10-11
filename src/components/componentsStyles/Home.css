@@ -26,6 +26,9 @@
     width: 30%;
     justify-content: center;
 }
+.image-container-mobile{
+    display: none;
+}
 
 .intro {
     font-size: 37px;
@@ -90,6 +93,12 @@
     .image-container {
         width: 100%;
         margin-top: 20px;
+        display: none;
+    }
+    .image-container-mobile{
+        width: 100%;
+        margin-top: 20px;
+        display: block;
     }
 
     .intro {

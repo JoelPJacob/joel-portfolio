@@ -45,6 +45,6 @@
     }
 
     img {
-        width: 1000px; /* Adjusted width for smaller screens */
+        width: 100%; 
     }
 }
