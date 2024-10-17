@@ -26,11 +26,21 @@
 .education-item {
   flex: 1;
   margin-bottom: 20px;
-  max-width: 400px; /* Restrict the width */
+  /* max-width: 400px; */
 }
 
 .education-details {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.education-info {
+  display: flex;
+  /* align-items: center;  */
+}
+
+.college-logo {
+  width: 40px; /* Adjust size of the logo */
+  height: 40px;
+  margin-right: 10px;
 }
 
 .education-details h3 {

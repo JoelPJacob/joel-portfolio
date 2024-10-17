@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./componentsStyles/Education.css";
 import { useTheme } from '../context/ThemeContext';
+import Works from "../components/Work";
 
 const certifications = [
   { id: 1, title: "Certified React Developer", date: "June 2022" },
@@ -113,7 +114,18 @@ const Education = () => {
             {educationData.slice(0, 2).map((education) => (
               <div key={education.id} className="education-item">
                 <div className="education-details">
-                  <h3>{education.subject}</h3>
+                  <div className="education-info">
+                  <img
+                      src={require("../assets/images/rb_41884.png")}
+                      alt="College Logo"
+                      className="college-logo"
+                    />
+                  <div>
+                      <h3>{education.subject}</h3>
+                    </div>
+  
+
+                  </div>
                   <p>{education.college}</p>
                   <p>{education.duration}</p>
 
@@ -167,6 +179,7 @@ const Education = () => {
           </div>
         </div>
       </div>
+      <Works/>
     </>
   );
 };

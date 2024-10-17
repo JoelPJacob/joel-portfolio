@@ -92,7 +92,7 @@
 
     .image-container {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 250px;
         display: none;
     }
     .image-container-mobile{
@@ -139,5 +139,10 @@
     .profile-picture {
         height: 250px;
         width: 250px;
+    }
+    .image-container-mobile{
+        width: 100%;
+        margin-top: 250px;
+        display: block;
     }
 }

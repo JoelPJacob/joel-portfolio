@@ -6,8 +6,6 @@ import './componentsStyles/Technology.css';
 
 const Technology = () => {
     const { theme } = useTheme();
-
-    // Set the gradient color based on the theme
     const gradientColor = theme === 'light' ? 'rgb(248,251,253)' : 'rgb(0, 0, 0)';
 
     return (
