@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding: 0 10%;
 }
 
@@ -12,6 +11,7 @@
     align-items: center;
     width: 60%;
     flex-wrap: wrap;
+    margin-top: 150px;
 }
 
 .text-container {
@@ -55,10 +55,13 @@
 }
 
 .profile-picture {
-    height: 350px; /* Original height */
-    width: auto; /* Maintain aspect ratio */
+    height: 350px;
+    width: auto; 
     border: 3px solid white;
     animation: rotateImage 5s infinite;
+}
+.technology-height{
+    margin-top: 160px;
 }
 
 @keyframes rotateImage {
@@ -78,11 +81,17 @@
 @media only screen and (max-width: 768px) {
     .home {
         padding: 0 5%;
+
+        /* height: 100px; */
+    }
+    .technology-height{
+        margin-top: -100px;
     }
 
     .home-container {
         flex-direction: column;
         width: 90%;
+        margin-top: 110px;
     }
 
     .text-container {
@@ -142,7 +151,7 @@
     }
     .image-container-mobile{
         width: 100%;
-        margin-top: 250px;
+        margin-top: 20px;
         display: block;
     }
 }

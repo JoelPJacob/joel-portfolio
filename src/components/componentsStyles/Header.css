@@ -12,7 +12,7 @@
     height: 80px;
     border: 1px solid white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    z-index: 1000;
+    z-index: 2000;
 }
 * * {
     box-sizing: border-box;
@@ -32,7 +32,7 @@
 }
 
 .close-menu img {
-    width: 40px; /* Adjust as needed */
+    width: 40px; 
 }
 
 .mobile-menu {

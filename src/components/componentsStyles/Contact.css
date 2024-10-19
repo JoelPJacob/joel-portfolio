@@ -1,102 +1,132 @@
-.contact {
-  padding: 20px 200px;
+/* Contact Section Styling */
+.contact-section {
+  padding: 20px 200px; 
 }
 
-.main-heading {
-  text-align: center; /* Center the main heading */
-  font-size: 36px; /* Increase size for visibility */
-  margin-bottom: 20px; /* Add margin below heading */
+/* Main Heading */
+.contact-main-heading {
+  text-align: center;
+  font-size: 36px;
 }
 
-.sub-heading {
-  font-size: 30px !important;
-  text-align: center !important; 
-  margin-bottom: 20px; /* Add margin below sub-heading */
+/* Sub Heading */
+.contact-sub-heading {
+  font-size: 30px; 
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  text-align: center; 
+  margin-bottom: 10px;
 }
 
+/* Contact Details Container */
 .contact-details {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center; 
 }
 
+/* Individual Contact Item */
 .contact-item {
-  margin: 10px 0;
+  margin: 10px 0; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.gmail-sub-heading {
-  font-size: 15px;
+/* Gmail Sub Heading */
+.contact-gmail-sub-heading {
+  font-size: 15px; 
   font-family: "Sora", sans-serif;
   font-weight: 400;
-  line-height: 26px;
 }
 
+/* Contact Link Styling */
 .contact-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
-  justify-content: center; /* Center content */
-  transition: color 0.3s ease; /* Add transition for hover effect */
+  justify-content: center;
+  transition: color 0.3s ease;
 }
 
+/* Hover Effect for Links */
 .contact-link:hover {
-  color: #FFBB1A; /* Change color on hover */
+  color: #FFBB1A; 
 }
 
+/* Icon Styling */
 .contact-icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
 
-.linkedin-icon {
+.contact-linkedin-icon {
   width: 25px;
   height: 25px;
   margin-right: 10px;
 }
 
+/* Remove default margin for link text */
 .contact-link p {
   margin: 0;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .contact {
+  .contact-section {
     padding: 10px 20px; 
   }
 
-  .main-heading {
-    font-size: 28px; /* Adjust main heading size for mobile */
+  .contact-main-heading {
+    font-size: 40px;
+    font-weight: 600;
   }
 
-  .sub-heading {
-    font-size: 24px !important; /* Reduce subheading size for mobile */
+  .contact-sub-heading {
+    font-size: 24px; 
   }
 
   .contact-details {
-    align-items: center; 
+    align-items: center;
   }
 
   .contact-item {
-    margin: 15px 0; /* Add spacing between items */
+    margin: 15px 0; 
   }
 
   .contact-link {
-    justify-content: center; 
-    /* flex-direction: column;  */
+    justify-content: center;
     align-items: center;
   }
 
   .contact-icon {
-    margin-bottom: 10px; /* Add spacing below the icon */
+    margin-bottom: 10px; 
   }
 
-  .gmail-sub-heading {
-    font-size: 14px; /* Adjust font size for mobile */
+  .contact-gmail-sub-heading {
+    font-size: 14px; 
     line-height: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-main-heading {
+    font-size: 24px; 
+  }
+
+  .contact-sub-heading {
+    font-size: 20px; 
+  }
+
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .contact-gmail-sub-heading {
+    font-size: 15px; 
+    line-height: 20px;
   }
 }

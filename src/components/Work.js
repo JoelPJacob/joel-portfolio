@@ -121,7 +121,7 @@ const Works = () => {
                                 {work.type}
                             </span>
                         </div>
-                        <h3 className="work-title">{work.title}</h3>
+                        <p className="work-title">{work.title}</p>
                         <p className="work-technology">Technology: {work.technology}</p>
                         <p className="work-description">{work.description}</p>
                         <div className="button-container">

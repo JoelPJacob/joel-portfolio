@@ -1,4 +1,3 @@
-// CircularProgressBar.js
 import React from 'react';
 import './componentsStyles/CircularProgressBar.css'; 
 import { useTheme } from '../context/ThemeContext';
@@ -52,4 +51,3 @@ const CircularProgressBar = ({ percentage }) => {
   };
   
   export default CircularProgressBar;
-  

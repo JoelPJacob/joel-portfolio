@@ -6,13 +6,21 @@
   justify-content: center; 
 }
 .exp-designition{
-  font-size: 17px; 
-  font-weight: 500; 
+  font-size: 22px; 
+  font-weight: 700; 
   font-family: 'Sora', sans-serif;
 }
+.experience-element:hover .exp-designition {
+  color: #FFBB1A; 
+}
 .exp-organization{
-  font-size: 15px; 
+  font-size: 16px; 
   font-weight: 400; 
+  font-family: 'Sora', sans-serif;
+}
+.exp-location{
+  font-size: 15px; 
+  font-weight: 600; 
   font-family: 'Sora', sans-serif;
 }
 .exp-description{

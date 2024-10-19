@@ -39,7 +39,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="technology-height">
                 <Technology />
             </div>
         </>

@@ -74,7 +74,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div style={{marginTop:'50px'}}>
         <p className="main-heading">Skills</p>
         <div className="skills-container">
           {skills.map(skill => (

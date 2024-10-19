@@ -6,6 +6,7 @@ import { LightMode, DarkMode, MenuWhite, MenuBlack, CloseBlack, CloseWhite } fro
 const Header = () => {
   const { toggleTheme, theme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const headerHeight = 100;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +17,14 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = section.getBoundingClientRect().top + window.scrollY - headerHeight; 
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="header">
       <div className="left">
@@ -24,11 +33,11 @@ const Header = () => {
       <div className="right">
         <nav className="desktop-menu">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onClick={() => scrollToSection('home')}>Home</a></li>
+            <li><a onClick={() => scrollToSection('about')}>About</a></li>
+            <li><a onClick={() => scrollToSection('education')}>Education</a></li>
+            <li><a onClick={() => scrollToSection('experience')}>Experience</a></li>
+            <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
           </ul>
         </nav>
         <button className="mode-toggle" onClick={toggleTheme}>
@@ -41,14 +50,14 @@ const Header = () => {
       {isMenuOpen && (
         <div className="mobile-menu">
           <button className="close-menu" onClick={closeMenu}>
-            {theme === 'light' ? <CloseWhite width={'40px'} /> : <CloseWhite width={'40px'} />}
+            {theme === 'light' ? <CloseWhite width={'40px'} /> : <CloseBlack width={'40px'} />}
           </button>
           <ul>
-            <li><a href="#home" onClick={closeMenu}>Home</a></li>
-            <li><a href="#about" onClick={closeMenu}>About</a></li>
-            <li><a href="#education" onClick={closeMenu}>Education</a></li>
-            <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
-            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+            <li><a onClick={() => { scrollToSection('home'); closeMenu(); }}>Home</a></li>
+            <li><a onClick={() => { scrollToSection('about'); closeMenu(); }}>About</a></li>
+            <li><a onClick={() => { scrollToSection('education'); closeMenu(); }}>Education</a></li>
+            <li><a onClick={() => { scrollToSection('experience'); closeMenu(); }}>Experience</a></li>
+            <li><a onClick={() => { scrollToSection('contact'); closeMenu(); }}>Contact</a></li>
           </ul>
         </div>
       )}

@@ -20,15 +20,15 @@ const educationData = [
     projects: [
       {
         id: 1,
-        subject: "CUSTOMER CLASSIFICATION BASED ON PREVIOUS PURCHASE DETAILS",
+        subject: "Customer Classification Based on Previous Purchase Details",
         fullDescription:
-          "Developed a customer classification system employing machine learning and AI to boost targeted marketing, with Python as the front end and SQL as the back end. This project honed my skills in data analysis and machine learning for informed decision-making.",
+          "Developed a customer classification system utilizing machine learning and AI to enhance targeted marketing strategies. Python was used for the front end and SQL for database management. This project focused on automating the categorization of customers based on purchase patterns, improving the effectiveness of marketing campaigns and aiding data-driven decision-making processes."
       },
       {
         id: 2,
         subject: "Online Allotment System",
         fullDescription:
-          "Created 'Online Allotment System' to streamline college admissions. Using PHP and SQL, built a user-friendly web app for efficient admission processes. Skills: web dev, database management, project execution.",
+          "Created an online allotment system to streamline the college admission process. Built using PHP for the front end and SQL for the database, this web application was designed to optimize student enrollment workflows, making the admission process smoother and more efficient. The project strengthened my skills in web development, project execution, and database management."
       },
     ],
   },
@@ -42,13 +42,13 @@ const educationData = [
         id: 1,
         subject: "Kids App",
         fullDescription:
-          "Developed using Android. It is a mobile application which can be used as an online study material for kids.",
+          "Designed and developed a mobile learning application for children, built on the Android platform. This app provided interactive study materials aimed at enhancing the learning experience for young users. By integrating engaging content and user-friendly features, the app facilitated easy access to educational resources, promoting better learning outcomes for kids."
       },
       {
         id: 2,
         subject: "Catering Management System",
         fullDescription:
-          "Developed using VB and MySQL. It is a desktop application to automate the order placing scenario for a catering service provider. The implementation would improve the process of placing and management. The VB application created is user friendly and effective in order management.",
+          "Developed a desktop application for a catering service provider, aimed at automating order placement and management processes. The application was built using Visual Basic (VB) for the front end and MySQL for the database. This system improved the efficiency of catering order management and provided a user-friendly interface, enhancing overall business operations."
       },
     ],
   },
@@ -104,7 +104,7 @@ const Education = () => {
   return (
     <>
       <div className="experience-container">
-        <div>
+        <div style={{ marginTop: '20px', marginBottom: '50px' }}>
           <p className="main-heading">Education</p>
         </div>
 
@@ -115,19 +115,17 @@ const Education = () => {
               <div key={education.id} className="education-item">
                 <div className="education-details">
                   <div className="education-info">
-                  <img
+                    <img
                       src={require("../assets/images/rb_41884.png")}
                       alt="College Logo"
                       className="college-logo"
                     />
-                  <div>
-                      <h3>{education.subject}</h3>
+                    <div>
+                      <p style={{fontSize:'19px',fontWeight:'600'}}>{education.subject}</p>
                     </div>
-  
-
                   </div>
-                  <p>{education.college}</p>
-                  <p>{education.duration}</p>
+                  <p className="education-collge-name">{education.college}</p>
+                  <p className="education-collge-duration">{education.duration}</p>
 
                   {/* Conditionally render Projects section */}
                   {education.projects && education.projects.length > 0 && (
@@ -138,7 +136,7 @@ const Education = () => {
                           <div key={project.id} className="project-item">
                             <div className="timeline-line" style={timelineLineStyle}></div>
                             <div className="project-content">
-                              <p>{project.subject}</p>
+                              <p className="eduction-project-title">{project.subject}</p>
                               <p>
                                 {!seeMore[`${education.id}-${project.id}`]
                                   ? getFirstLine(project.fullDescription)
@@ -179,7 +177,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-      <Works/>
+      <Works />
     </>
   );
 };
