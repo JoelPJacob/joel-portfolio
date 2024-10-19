@@ -20,7 +20,7 @@ const Header = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const offset = section.getBoundingClientRect().top + window.scrollY - headerHeight; 
+      const offset = section.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   };
@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="left">
-        {/* <p>Joel</p> */}
+        <p>Joel</p>
       </div>
       <div className="right">
         <nav className="desktop-menu">
@@ -41,10 +41,10 @@ const Header = () => {
           </ul>
         </nav>
         <button className="mode-toggle" onClick={toggleTheme}>
-          {theme === 'light' ? <DarkMode width={'40px'} /> : <LightMode width={'40px'} />}
+          {theme === 'light' ? <DarkMode width={'40px'} height={"40px"} /> : <LightMode width={'40px'} height={"40px"} />}
         </button>
         <button className="menu-toggle" onClick={toggleMenu}>
-          {theme === 'light' ? <MenuBlack width={'40px'} /> : <MenuWhite width={'40px'} />}
+          {theme === 'light' ? <MenuBlack width={'40px'} height={"40px"} /> : <MenuWhite width={'40px'} height={"40px"} />}
         </button>
       </div>
       {isMenuOpen && (

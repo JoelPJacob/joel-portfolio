@@ -55,7 +55,7 @@
 }
 
 .profile-picture {
-    height: 350px;
+    height: 290px;
     width: auto; 
     border: 3px solid white;
     animation: rotateImage 5s infinite;

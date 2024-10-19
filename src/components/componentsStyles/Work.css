@@ -8,53 +8,6 @@
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
-/* Adjusting the container width for mobile */
-@media (max-width: 464px) {
-    .works-container {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .works-heading {
-        font-size: 1.5rem;
-    }
-
-    .work-item {
-        padding: 10px;
-        min-height: 400px;
-    }
-
-    .work-title {
-        font-size: 18px;
-    }
-
-    .work-description,
-    .work-technology {
-        font-size: 12px;
-    }
-
-    .work-image {
-        height: 150px;
-    }
-
-    .button-container {
-        flex-direction: column; /* Stack the buttons in mobile */
-        gap: 10px; /* Add some space between buttons */
-    }
-
-    .work-button {
-        width: 100%; /* Make buttons full-width on mobile */
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .git-icon {
-        width: 25px;
-        height: 25px;
-    }
-}
-
 .work-item {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -109,7 +62,7 @@
     font-size: 13px;
     font-family: 'Sora', 'Sora';
     overflow: hidden;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .work-technology {
@@ -152,3 +105,50 @@
     margin-right: 0px;
     vertical-align: middle;
 }
+
+/* Adjusting the container width for mobile */
+@media (max-width: 464px) {
+    .works-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .works-heading {
+        font-size: 1.5rem;
+    }
+
+    .work-item {
+        padding: 10px;
+        min-height: 400px;
+    }
+
+    .work-title {
+        font-size: 18px;
+    }
+
+    .work-description,
+    .work-technology {
+        font-size: 12px;
+    }
+
+    .work-image {
+        height: 150px;
+    }
+
+    .button-container {
+        flex-direction: row;
+        gap: 5px; 
+    }
+
+    .work-button {
+        width: 40%; 
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .git-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
