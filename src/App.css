@@ -43,8 +43,8 @@ html {
 }
 
 .main-heading {
-  font-family: sans-serif, 'Sora';
-  font-size: 37px;
+  font-family:'Sora', sans-serif,;
+  font-size: 40px;
   font-weight: 600;
   /* line-height: 26px; */
   /* padding-top: 150px; */

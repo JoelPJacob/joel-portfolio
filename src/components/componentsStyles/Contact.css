@@ -6,7 +6,7 @@
 /* Main Heading */
 .contact-main-heading {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 /* Sub Heading */
@@ -79,7 +79,7 @@
   }
 
   .contact-main-heading {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
   }
 
@@ -112,7 +112,7 @@
 
 @media (max-width: 375px) {
   .contact-main-heading {
-    font-size: 24px; 
+    font-size: 32px; 
   }
 
   .contact-sub-heading {
